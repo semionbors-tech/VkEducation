@@ -32,7 +32,7 @@ fun AppNavigation() {
             // Достаем имя приложения, которое передали при клике
             val appName = backStackEntry.arguments?.getString("appName")
 
-            // Находим это приложение в нашем списке (предполагаем, что sampleApps доступен)
+            
             val app = sampleApps.find { it.name == appName } ?: sampleApps.first()
 
             AppDetailsScreen(
